@@ -1,3 +1,8 @@
+PATH
+  remote: ../nuscomputing_models
+  specs:
+    nuscomputing_models (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -69,6 +74,8 @@ GEM
     jquery-turbolinks (2.1.0)
       railties (>= 3.1.0)
       turbolinks
+    jquery-ui-rails (5.0.5)
+      railties (>= 3.2.16)
     json (1.8.3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
@@ -155,7 +162,9 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
+  jquery-ui-rails
   mysql
+  nuscomputing_models!
   rails (= 4.2.3)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

@@ -19,7 +19,7 @@ gem 'foundation-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-# gem 'jquery-ui-rails'
+gem 'jquery-ui-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -34,6 +34,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'mysql'
 
+gem 'nuscomputing_models', path: "../nuscomputing_models"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -44,7 +46,7 @@ gem 'mysql'
 # gem 'capistrano-rails', group: :development
 
 # Use FontAwesome for icons
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

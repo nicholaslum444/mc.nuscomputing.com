@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>McNuscomputingCom</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "vendor/modernizr" %>
+  <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
+
 <body>
+<div class="container">
 
-<%= yield %>
+  <%# Load the side bar %>
+  <%= render "layouts/sidebar" %>
 
+  <%# Load the main view %>
+  <div class="main-view">
+    <%# load the top bar in the main view %>
+    <%= render "layouts/topbar" %>
+    <%= yield %>
+  </div>
+
+</div>
 </body>
 </html>
